@@ -1,0 +1,4462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1321</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame_content">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0" rowspan="2">
+        <widget class="QFrame" name="frame_para">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QFrame" name="frame_ch1">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="2" column="2">
+              <widget class="QPushButton" name="pushButton_ch1_OFF">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>OFF</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="pushButton_ch1_setPara">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置参数</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_ch1_ON">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>ON</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QFrame" name="frame_ch1_mode">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_11">
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="label_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>输出模式：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QCheckBox" name="checkBox_ch1_reverse">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>反相</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="2">
+                 <widget class="QComboBox" name="comboBox_ch1_mode_mode">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Continuous</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Burst</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_mode_inpedance_para">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="minimum">
+                   <double>1.000000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>1.000000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="2">
+                 <widget class="QLabel" name="label_3">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>负载阻抗：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QComboBox" name="comboBox_ch1_mode_inpedance_unit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>高阻抗</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Ω</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>kΩ</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QFrame" name="frame_ch1_mode_burst">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QFrame" name="frame_ch1_wave">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>输出波形：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_ch1_wave">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="acceptDrops">
+                   <bool>false</bool>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_ch1_sine">
+                   <attribute name="title">
+                    <string>正弦波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="1" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch1_sine_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_sine_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_sine_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>70</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>70</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_sine_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_sine_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch1_sine_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_sine_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_sine_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                        <property name="value">
+                         <double>5.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_sine_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_sine_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_3">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_sine_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_sine_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>2.500000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_sine_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>4.000000000000000</double>
+                        </property>
+                        <property name="value">
+                         <double>5.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_ch1_square">
+                   <attribute name="title">
+                    <string>方波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch1_square_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_square_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_3">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_square_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_square_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_square_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch1_square_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_square_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_square_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_6">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_square_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_square_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_7">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_square_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_8">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_square_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_square_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_ch1_PWM">
+                   <attribute name="title">
+                    <string>PWM波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="0" column="0" colspan="3">
+                     <widget class="QTabWidget" name="tabWidget_ch1_PWM_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_PWM_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_PWM_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_PWM_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_6">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch1_PWM_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="3">
+                     <widget class="QTabWidget" name="tabWidget_ch1_PWM_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch1_PWM_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_9">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_PWM_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_10">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_PWM_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch1_PWM_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_11">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch1_PWM_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_12">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_PWM_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_PWM_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_vol_13">
+                      <property name="font">
+                       <font>
+                        <family>Arial</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>占空比：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_ch1_PWM_duty">
+                      <property name="minimumSize">
+                       <size>
+                        <width>100</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>100</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="value">
+                       <double>50.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QLabel" name="label_vol_14">
+                      <property name="font">
+                       <font>
+                        <family>Arial</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>%</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>---------------CH1---------------</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_ch2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_18">
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_ch2_ON">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>ON</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QFrame" name="frame_ch2_mode">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_17">
+                <item row="4" column="0">
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_mode_inpedance_para">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="minimum">
+                   <double>1.000000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>1.000000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="2">
+                 <widget class="QLabel" name="label_8">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>负载阻抗：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QFrame" name="frame_ch2_mode_burst">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="2">
+                 <widget class="QComboBox" name="comboBox_ch2_mode_mode">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Continuous</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Burst</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="label_9">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>输出模式：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QComboBox" name="comboBox_ch2_mode_inpedance_unit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>高阻抗</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Ω</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>kΩ</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QCheckBox" name="checkBox_ch2_reverse">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>反相</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QFrame" name="frame_ch2_wave">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>输出波形：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_ch2_wave">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="acceptDrops">
+                   <bool>false</bool>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_ch2_sine">
+                   <attribute name="title">
+                    <string>正弦波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_14">
+                    <item row="1" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch2_sine_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_sine_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_13">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_sine_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_sine_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_14">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_sine_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch2_sine_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_sine_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_29">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_sine_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                        <property name="value">
+                         <double>5.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_30">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_sine_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_sine_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_31">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_sine_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_32">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_sine_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>2.500000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_sine_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>4.000000000000000</double>
+                        </property>
+                        <property name="value">
+                         <double>5.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_ch2_square">
+                   <attribute name="title">
+                    <string>方波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_15">
+                    <item row="0" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch2_square_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_square_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_15">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_square_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_square_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_16">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_square_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QTabWidget" name="tabWidget_ch2_square_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_square_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_33">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_square_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_34">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_square_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_square_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_35">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_square_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_36">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_square_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_square_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_ch2_PWM">
+                   <attribute name="title">
+                    <string>PWM波</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_16">
+                    <item row="0" column="0" colspan="3">
+                     <widget class="QTabWidget" name="tabWidget_ch2_PWM_freq">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_PWM_freq_freq">
+                       <attribute name="title">
+                        <string>频率</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_17">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>频率：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_PWM_freq_freq_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_freq_freq_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>Hz</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Hz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>kHz</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>MHz</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_PWM_freq_cycle">
+                       <attribute name="title">
+                        <string>周期</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_freq_18">
+                        <property name="geometry">
+                         <rect>
+                          <x>9</x>
+                          <y>11</y>
+                          <width>57</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>周期：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_freq_cycle_unit">
+                        <property name="geometry">
+                         <rect>
+                          <x>190</x>
+                          <y>10</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentText">
+                         <string>s</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>s</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ms</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>μs</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ns</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doublespinBox_ch2_PWM_freq_cycle_para">
+                        <property name="geometry">
+                         <rect>
+                          <x>80</x>
+                          <y>10</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="value">
+                         <double>1.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="3">
+                     <widget class="QTabWidget" name="tabWidget_ch2_PWM_vol">
+                      <property name="minimumSize">
+                       <size>
+                        <width>270</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>160</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="tab_ch2_PWM_vol_hlvol">
+                       <attribute name="title">
+                        <string>高-低电平</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_37">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>高电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_PWM_vol_hlvol_hpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_vol_hlvol_hunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_38">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>低电平：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_PWM_vol_hlvol_lpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_vol_hlvol_lunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </widget>
+                      <widget class="QWidget" name="tab_ch2_PWM_vol_appoff">
+                       <attribute name="title">
+                        <string>幅度-偏置</string>
+                       </attribute>
+                       <widget class="QLabel" name="label_vol_39">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>70</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>偏置：</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_vol_appoff_appunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>20</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_ch2_PWM_vol_appoff_offunit">
+                        <property name="geometry">
+                         <rect>
+                          <x>200</x>
+                          <y>70</y>
+                          <width>50</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>mV</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                       </widget>
+                       <widget class="QLabel" name="label_vol_40">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>20</y>
+                          <width>76</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>幅度：</string>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_PWM_vol_appoff_offpara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>70</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                       <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_PWM_vol_appoff_apppara">
+                        <property name="geometry">
+                         <rect>
+                          <x>90</x>
+                          <y>20</y>
+                          <width>100</width>
+                          <height>25</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>100</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>14</pointsize>
+                         </font>
+                        </property>
+                        <property name="minimum">
+                         <double>0.000000000000000</double>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_vol_41">
+                      <property name="font">
+                       <font>
+                        <family>Arial</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>占空比：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_ch2_PWM_duty">
+                      <property name="minimumSize">
+                       <size>
+                        <width>100</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>100</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QLabel" name="label_vol_42">
+                      <property name="font">
+                       <font>
+                        <family>Arial</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>%</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="pushButton_ch2_OFF">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>OFF</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="pushButton_ch2_setPara">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>设置参数</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>---------------CH2---------------</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_figure">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_menu">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_about">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>help/about</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_saveload">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>保存/加载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1321</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
